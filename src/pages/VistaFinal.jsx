@@ -32,6 +32,9 @@ const VistaFinal = () => {
         <button type="button" onClick={() => navigate("/listaServicio")} className="btn">
           Lista Servicio
         </button>
+         <button type="button" onClick={() => navigate("/listaUsuario")} className="btn">
+          Lista usuarios
+        </button>
       </div>
     </main>
   );

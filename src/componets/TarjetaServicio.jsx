@@ -1,11 +1,13 @@
-const TarjetaServicio = ({ nombre, imagen, onVerMas }) => {
+import { useNavigate } from "react-router-dom";
+const TarjetaServicio = ({ datos }) => {
+  let redireccion = useNavigate();
   return (
     <div className="tarjeta_Servicio">
-      <h3>{nombre}</h3>
+      <h3>{datos.nombre}</h3>
       <div className="imagen_contenedor_servicio">
-        <img src={imagen} alt={nombre} className="imagen_ajustada_servicio" />
+        <img src={datos.imagen} alt={datos.nombre} className="imagen_ajustada_servicio" />
       </div>
-      <button type="button" className="btn" onClick={onVerMas}>
+      <button type="button" className="btn" onClick={() => redireccion(`/vistaServicio/${datos.id}`, { state: datos })}>
         Ver más
       </button>
     </div>

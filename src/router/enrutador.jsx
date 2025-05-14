@@ -15,7 +15,7 @@ export let enrutador = [
       element: <ListaServicio />,
     },
     {
-      path: "/vistaServicio",
+      path: "/vistaServicio/:id",
       element: <VistaServicio />,
     },
     {

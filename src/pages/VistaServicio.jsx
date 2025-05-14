@@ -1,34 +1,43 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import Encabezado from "../componets/Encabezado";
-import './VistaServicio.css';
+import "./VistaServicio.css";
 
 const VistaServicio = () => {
   const location = useLocation();
+  const servicio =
+    location.state || JSON.parse(localStorage.getItem("servicio"));
   const navigate = useNavigate();
-  const { nombre, imagen } = location.state || { nombre: "Servicio desconocido", imagen: "" };
-
   return (
     <main>
       <Encabezado titulo="Servicio" />
       <div className="contenedorInformacion">
-        <section>
-          <h2>{nombre}</h2>
-          <div className="imagenContenedor">
-            {imagen && <img src={imagen} alt={nombre} className="imagenServicio" />}
-          </div>
+        <section className="contenedorImagenServicio">
+          <h2>{servicio.nombre}</h2>
+          <img
+            src={servicio.imagen}
+            alt={`Foto de perfil de ${servicio.nombre}`}
+          />
         </section>
-        <section>
+        <section className="contenedorInfoPrincipal">
           <h2>Información principal</h2>
-          <p>
-            Aquí puedes describir los detalles del servicio de <strong>{nombre}</strong>.
-            Por ejemplo, tiempo estimado, costos, y otros detalles que el cliente necesita saber.
-          </p>
+          <p>{servicio.info}</p>
         </section>
       </div>
       <div className="contenedor-boton-clientes">
-        <button type="button"onClick={() => navigate("/listaUsuario")} className="btn">
+        <button
+          type="button"
+          onClick={() => navigate("/listaUsuario")}
+          className="btn"
+        >
           Lista Usuarios
         </button>
+          <button
+            type="button"
+            onClick={() => navigate("/listaServicio")}
+            className="btn"
+          >
+            Lista servicios
+          </button>
       </div>
     </main>
   );

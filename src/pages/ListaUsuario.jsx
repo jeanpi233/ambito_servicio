@@ -9,7 +9,7 @@ const ListaUsuario = () => {
   const manejarVer = (nombre) => {
     const imagenes = {
       Cristian: "/public/imagenes/cristian.jpg",
-      Lucas: "/lucas.jpg",
+      Lucas: "/public/imagenes/cesar calzones.png",
       Emanuel: "/public/imagenes/emanuel.jpg",
       Mateo: "/public/imagenes/mateo.jpg"
     };
@@ -23,7 +23,7 @@ const ListaUsuario = () => {
       
       <div className="contenedor_Usuario">
         <TarjetaUsuario nombre="Cristian" imagen="/public/imagenes/cristian.jpg" onVer={() => manejarVer("Cristian")} />
-        <TarjetaUsuario nombre="Lucas" imagen= "/public/imagenes/Lucas.jfif" onVer={() => manejarVer("Lucas")} />
+        <TarjetaUsuario nombre="Lucas" imagen= "/public/imagenes/cesar calzones.png" onVer={() => manejarVer("Lucas")} />
         <TarjetaUsuario nombre="Emanuel" imagen="/public/imagenes/emanuel.jpg" onVer={() => manejarVer("Emanuel")} />
         <TarjetaUsuario nombre="Mateo" imagen="/public/imagenes/mateo.jpg" onVer={() => manejarVer("Mateo")} />
       </div>

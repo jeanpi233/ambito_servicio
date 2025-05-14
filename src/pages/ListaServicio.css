@@ -1,8 +1,9 @@
-.contenedor_Servicio {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 60px;
+.contenedorLista {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: 30px auto;
 }
 
 .tarjeta_Servicio {
@@ -13,6 +14,7 @@
   text-align: center;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
   height: 200px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
