@@ -1,0 +1,64 @@
+.encabezado {
+  display: flex;
+  justify-content: space-between; /* Mantén los botones a la derecha */
+  align-items: center; /* Centra verticalmente el contenido */
+  padding: 15px 30px;
+  background-color: #4a565e; /* Azul claro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 3px solid #000; /* Borde negro */
+  border-radius: 8px;
+}
+
+.encabezado h1 {
+  flex-grow: 1; /* Toma el espacio disponible para centrar el título */
+  text-align: center; /* Centra el texto */
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.btnEncabezado {
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #444; /* Gris oscuro */
+  border-radius: 8px;
+  border: 2px solid #333;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5),
+              inset 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btnEncabezado:hover {
+  background-color: #666; /* Gris más claro al pasar el mouse */
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4),
+              inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.boton-inicio {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  border: 2px solid #584f4f;
+  background: #5f5757;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.boton-inicio:hover {
+  transform: scale(1.05);
+}
+
+.contenedor-boton-inicio {
+  width: 97%;
+  padding-right: 20px; /* Mismo padding que las tarjetas */
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end; /* Esto lo empuja a la derecha */
+}

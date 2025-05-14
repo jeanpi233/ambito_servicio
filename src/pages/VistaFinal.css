@@ -1,0 +1,66 @@
+/* Contenedor de ambas secciones centradas horizontalmente */
+.contenedorFinal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Responsive */
+}
+
+/* Estilo para la sección de la izquierda */
+.perfil_usuario_final, .informacion_usuario_final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+}
+
+
+/* Contenedor de la imagen */
+.imagenContenedor_final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 100%;
+  height: 200px;  /* Ajusta el tamaño del contenedor de la imagen */
+  overflow: hidden; /* Oculta cualquier parte que sobrepase el tamaño del contenedor */
+}
+
+/* Ajuste de la imagen para que se acomode bien dentro del cuadro */
+.imagen_vistafinal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Esto asegura que la imagen cubra todo el área sin distorsionarse */
+  border-radius: 50%;  /* Si prefieres la imagen redonda, puedes mantener esto */
+}
+
+/* Botón personalizado */
+.btn {
+  background-color: #222;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: 2px solid #584f4f;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.2s;
+  align-self: flex-start;
+  background: #5f5757;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  background-color: #666;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4),
+              inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.contenedor-boton-clientes {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}

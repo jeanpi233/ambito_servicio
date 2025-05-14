@@ -1,0 +1,51 @@
+.contenedorInformacion{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Responsive */
+}
+
+
+.imagenContenedor {
+  width: 250px;
+  height: 250px;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #999;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: #222;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: 2px solid #584f4f;
+  border-radius: 8px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.2s;
+  align-self: flex-start;
+  background: #5f5757;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.05) translateY(-2px);
+  background-color: #666;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.4),
+              inset 1px 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.contenedor-boton-clientes {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
